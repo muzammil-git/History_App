@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "579838829775",
+    "project_id": "historystorage-ac9e2",
+    "storage_bucket": "historystorage-ac9e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579838829775:android:802e94890e1879bc2703ba",
+        "android_client_info": {
+          "package_name": "com.example.history_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579838829775-lj84jsro7l3cu8pi9r2t6fuk2gq71lce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtWycYxk3E8JENIJ5EkttNEDf3t2CQnJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579838829775-lj84jsro7l3cu8pi9r2t6fuk2gq71lce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
