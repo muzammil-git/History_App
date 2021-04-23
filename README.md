@@ -18,14 +18,17 @@ samples, guidance on mobile development, and a full API reference.
 Minimal Viable Product (MVP):
 
 Picture based quiz for
- History
- Culture/Provinces
- Geography
- Human Rights and Constitutional Rights
+- History
+- Culture/Provinces
+- Geography
+- Human Rights and Constitutional Rights
 Drag & Drop
- Maps
- Heroes
- Cultural Dresses/ Music
+- Map point 
+- Heroes
+- Cultural Dresses/ Music
+
+
+#Future Suggestions
 YouTube video
 History (Indus Valley Civilization, Mughal Rule), Geography (Continents & Pakistan
 Map), National Anthem/Song, Videos on Cultural Diversity
