@@ -1,6 +1,6 @@
 # History App (Released v1.0.0 on 21st March 2021)
 
-<img src = "flutter_02.png" width="200" height="500">
+<img src = "flutter_02.png" width="300" height="500">
 
 ## Minimal Viable Product (MVP):
 
