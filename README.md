@@ -1,4 +1,5 @@
-# History App
+# History App (Released v1.0.0 on 21st March 2021)
+
 
 ## Minimal Viable Product (MVP):
 
