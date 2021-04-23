@@ -22,11 +22,10 @@ Drag & Drop
 
 
 
-/* Authors
+##### Authors
 
 - Naeema Siddiqui
 - Farwa Zehra
 - Mubahil Faaiz
 - Syed Muzammil Ali
 
-*/
