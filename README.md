@@ -23,7 +23,7 @@ Drag & Drop
 
 
 
-# Authors
+####### Authors
 
 ##### - Naeema Siddiqui
 ##### - Farwa Zehra
