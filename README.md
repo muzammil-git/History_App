@@ -24,8 +24,8 @@ Drag & Drop
 
 ##### Authors
 
-### - Naeema Siddiqui
-### - Farwa Zehra
-### - Mubahil Faaiz
-### - Syed Muzammil Ali
+##### - Naeema Siddiqui
+##### - Farwa Zehra
+##### - Mubahil Faaiz
+##### - Syed Muzammil Ali
 
