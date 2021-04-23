@@ -15,7 +15,7 @@ Drag & Drop
 - Heroes
 - Cultural Dresses/ Music
 
-# Future Suggestions
+## Future Suggestions
 - YouTube video
 - National Anthem/Song
 - Videos on Cultural Diversity
