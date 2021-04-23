@@ -1,16 +1,31 @@
-# history_app
+# History App (Released v1.0.0 on 21st March 2021)
 
-A new Flutter application.
 
-## Getting Started
+## Minimal Viable Product (MVP):
 
-This project is a starting point for a Flutter application.
+Picture based quiz for
+- History (Indus Valley Civilization, Mughal Rule)
+- Culture/Provinces
+- Geography (Continents & Pakistan Map)
+- Human Rights and Constitutional Rights
 
-A few resources to get you started if this is your first Flutter project:
+Drag & Drop
+- Map point 
+- Heroes
+- Cultural Dresses/ Music
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# Future Suggestions
+- YouTube video
+- National Anthem/Song
+- Videos on Cultural Diversity
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+#### Authors
+
+##### - Naeema Siddiqui
+##### - Farwa Zehra
+##### - Mubahil Faaiz
+##### - Syed Muzammil Ali
+
