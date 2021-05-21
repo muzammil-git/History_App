@@ -1,5 +1,6 @@
 # History App (Released v1.0.0 on 21st March 2021)
 
+<img src = "flutter_02.png" width="300" height="550">
 
 ## Minimal Viable Product (MVP):
 
@@ -14,7 +15,7 @@ Drag & Drop
 - Heroes
 - Cultural Dresses/ Music
 
-# Future Suggestions
+## Future Suggestions
 - YouTube video
 - National Anthem/Song
 - Videos on Cultural Diversity
@@ -22,10 +23,11 @@ Drag & Drop
 
 
 
-#### Authors
+###### Authors
 
 ##### - Naeema Siddiqui
 ##### - Farwa Zehra
 ##### - Mubahil Faaiz
 ##### - Syed Muzammil Ali
+
 
