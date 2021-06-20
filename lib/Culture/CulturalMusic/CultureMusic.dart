@@ -18,7 +18,6 @@ class Question{
   }
 }
 
-
 class CultureMusic extends StatefulWidget {
 
   static const String id = "CultureMusic";
