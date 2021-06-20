@@ -52,12 +52,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Welcome to Flutter',
+        title: 'Welcome to History App',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           fontFamily: 'Regular',
         ),
-        initialRoute: StartupScreen.id,
+        initialRoute: Content.id,
         routes: {
           //Muzammil's Work
           StartupScreen.id: (context) => StartupScreen(),

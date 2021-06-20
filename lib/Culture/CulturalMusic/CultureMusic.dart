@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +16,6 @@ class Question{
     questionText = qtn;
     questionAnswer = ans;
   }
-
 }
 
 
@@ -32,7 +33,13 @@ class _CultureMusicState extends State<CultureMusic> {
 
   Color neutral = Colors.amberAccent;
 
-
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    audioCache.clearCache();
+    advancedPlayer.dispose();
+  }
 
   var songName = [
     "Sindhi_cultural_Algoza_saaz","Pakistani_pashto_traditional",
@@ -93,6 +100,7 @@ class _CultureMusicState extends State<CultureMusic> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         title: Text('CULTURAL MUSIC'),
 
       ),
@@ -124,54 +132,207 @@ class _CultureMusicState extends State<CultureMusic> {
       ),
     );
   }
-  bool isButtonPressed = false;
 
-  Widget selection(List<Question>result){
+  Color right1 = Colors.yellow;
+  Color wrong1 = Colors.yellow;
 
-    Color right = Colors.green;
-    Color wrong = Colors.red;
+  Color right2 = Colors.yellow;
+  Color wrong2 = Colors.yellow;
 
+  Color right3 = Colors.yellow;
+  Color wrong3 = Colors.yellow;
+
+  Color right4 = Colors.yellow;
+  Color wrong4 = Colors.yellow;
+
+  Color right5 = Colors.yellow;
+  Color wrong5 = Colors.yellow;
+
+  Color right6 = Colors.yellow;
+  Color wrong6 = Colors.yellow;
+
+  Widget selection1(List<Question>result) {
 
     return SizedBox(
       height: 150,
       width: 150,
       child: ListView.builder(
-        itemCount: 3,
-        itemBuilder: (BuildContext context,int index){
-          return ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              primary: isButtonPressed ? right : neutral,
-              onPrimary: Colors.black,
+          itemCount: 3,
+          itemBuilder: (BuildContext context, int index) {
+            return ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: result[index].questionAnswer ? right1 : wrong1,
+                onPrimary: Colors.black,
+              ),
+              onPressed: () {
 
-            ),
-              onPressed: (){
-              // print('Click');
-              if(result[index].questionAnswer == true){
-                print("yes");
-                setState(() {
-                  isButtonPressed = !isButtonPressed;
-                });
+                // print('Click');
+                if(result[index].questionAnswer == true ){
+                  // print('yo');
+                  setState(() {
+                    right1 = Colors.green;
+                  });
+                }
 
-                // isButtonPressed = !isButtonPressed;
-
-
-
-              }
-              // checkAnswer();
               },
+              child: Text(
+                result[index].questionText, textAlign: TextAlign.center,),
+            );
+          }
+      ),
+    );
+  }
+  Widget selection2(List<Question>result) {
 
-              child: Text(result[index].questionText,textAlign: TextAlign.center,),
-          );
-        }
+    return SizedBox(
+      height: 150,
+      width: 150,
+      child: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (BuildContext context, int index) {
+            return ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: result[index].questionAnswer ? right2 : wrong2,
+                onPrimary: Colors.black,
+              ),
+              onPressed: () {
+                // print('Click');
+                if(result[index].questionAnswer == true ){
+                  // print('yo');
+                  setState(() {
+                    right2 = Colors.green;
+                  });
+                }
 
+              },
+              child: Text(
+                result[index].questionText, textAlign: TextAlign.center,),
+            );
+          }
+      ),
+    );
+  }
+  Widget selection3(List<Question>result) {
 
+    return SizedBox(
+      height: 150,
+      width: 150,
+      child: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (BuildContext context, int index) {
+            return ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: result[index].questionAnswer ? right3 : wrong3,
+                onPrimary: Colors.black,
+              ),
+              onPressed: () {
+                // print('Click');
+                if(result[index].questionAnswer == true ){
+                  // print('yo');
+                  setState(() {
+                    right3 = Colors.green;
+                  });
+                }
+
+              },
+              child: Text(
+                result[index].questionText, textAlign: TextAlign.center,),
+            );
+          }
+      ),
+    );
+  }
+  Widget selection4(List<Question>result) {
+
+    return SizedBox(
+      height: 150,
+      width: 150,
+      child: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (BuildContext context, int index) {
+            return ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: result[index].questionAnswer ? right4 : wrong4,
+                onPrimary: Colors.black,
+              ),
+              onPressed: () {
+                // print('Click');
+                if(result[index].questionAnswer == true ){
+                  // print('yo');
+                  setState(() {
+                    right4 = Colors.green;
+                  });
+                }
+
+              },
+              child: Text(
+                result[index].questionText, textAlign: TextAlign.center,),
+            );
+          }
+      ),
+    );
+  }
+  Widget selection5(List<Question>result) {
+
+    return SizedBox(
+      height: 150,
+      width: 150,
+      child: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (BuildContext context, int index) {
+            return ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: result[index].questionAnswer ? right5 : wrong5,
+                onPrimary: Colors.black,
+              ),
+              onPressed: () {
+                // print('Click');
+                if(result[index].questionAnswer == true ){
+                  // print('yo');
+                  setState(() {
+                    right5 = Colors.green;
+                  });
+                }
+
+              },
+              child: Text(
+                result[index].questionText, textAlign: TextAlign.center,),
+            );
+          }
+      ),
+    );
+  }
+  Widget selection6(List<Question>result) {
+
+    return SizedBox(
+      height: 150,
+      width: 150,
+      child: ListView.builder(
+          itemCount: 3,
+          itemBuilder: (BuildContext context, int index) {
+            return ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                primary: result[index].questionAnswer ? right6 : wrong6,
+                onPrimary: Colors.black,
+              ),
+              onPressed: () {
+                // print('Click');
+                if(result[index].questionAnswer == true ){
+                  // print('yo');
+                  setState(() {
+                    right6 = Colors.green;
+                  });
+                }
+
+              },
+              child: Text(
+                result[index].questionText, textAlign: TextAlign.center,),
+            );
+          }
       ),
     );
   }
 
-  void checkAnswer(){
-
-  }
 
   Widget localAsset() {
     return _Tab(
@@ -187,7 +348,7 @@ class _CultureMusicState extends State<CultureMusic> {
                   decoration: BoxDecoration(color: Colors.lightGreenAccent,borderRadius: BorderRadius.all(Radius.circular(10))),
                   child: Column(
                     children: [
-                      Text('Sindhi_cultural_Algoza_saaz\n', style: TextStyle(fontFamily: "Bold"),),
+                      // Text('Sindhi_cultural_Algoza_saaz\n', style: TextStyle(fontFamily: "Bold"),),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -195,11 +356,10 @@ class _CultureMusicState extends State<CultureMusic> {
                           _Btn(txt: 'Stop', onPressed: () => advancedPlayer.stop()),
                         ],
                       ),
-
                     ],
                   ),
                 ),
-                selection(_questionList1)
+                selection1(_questionList1)
               ],
             ),
             SizedBox(height: 30,),
@@ -214,7 +374,7 @@ class _CultureMusicState extends State<CultureMusic> {
 
                   child: Column(
                     children: [
-                      Text('Pakistani_pashto_traditional\n',style: TextStyle(fontFamily:'Bold'),),
+                      // Text('Pakistani_pashto_traditional\n',style: TextStyle(fontFamily:'Bold'),),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -226,7 +386,7 @@ class _CultureMusicState extends State<CultureMusic> {
                     ],
                   ),
                 ),
-                selection(_questionList2)
+                selection2(_questionList2)
 
               ],
             ),
@@ -240,7 +400,7 @@ class _CultureMusicState extends State<CultureMusic> {
                   width: 210,
                   decoration: BoxDecoration(color: Colors.lightGreenAccent,borderRadius: BorderRadius.all(Radius.circular(10))),
                   child: Column(                    children: [
-                      Text('Folk_music_of_Gilgit Baltistan\n',style: TextStyle(fontFamily:'Bold')),
+                      // Text('Folk_music_of_Gilgit Baltistan\n',style: TextStyle(fontFamily:'Bold')),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -252,7 +412,7 @@ class _CultureMusicState extends State<CultureMusic> {
                     ],
                   ),
                 ),
-                selection(_questionList3)
+                selection3(_questionList3)
 
               ],
             ),
@@ -267,7 +427,7 @@ class _CultureMusicState extends State<CultureMusic> {
                   decoration: BoxDecoration(color: Colors.lightGreenAccent,borderRadius: BorderRadius.all(Radius.circular(10))),
                   child: Column(
                     children: [
-                      Text('Folk_song_of_Kashmir\':\n', style: TextStyle(fontFamily:'Bold')),
+                      // Text('Folk_song_of_Kashmir\':\n', style: TextStyle(fontFamily:'Bold')),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -279,7 +439,7 @@ class _CultureMusicState extends State<CultureMusic> {
                     ],
                   ),
                 ),
-                selection(_questionList4)
+                selection4(_questionList4)
 
               ],
             ),
@@ -294,7 +454,7 @@ class _CultureMusicState extends State<CultureMusic> {
                   decoration: BoxDecoration(color: Colors.lightGreenAccent,borderRadius: BorderRadius.all(Radius.circular(10))),
                   child: Column(
                     children: [
-                      Text('Energatic_Bhangra_Beat\':\n', style: TextStyle(fontFamily:'Bold')),
+                      // Text('Energatic_Bhangra_Beat\':\n', style: TextStyle(fontFamily:'Bold')),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -306,7 +466,7 @@ class _CultureMusicState extends State<CultureMusic> {
                     ],
                   ),
                 ),
-                selection(_questionList5)
+                selection5(_questionList5)
 
 
               ],
@@ -321,7 +481,7 @@ class _CultureMusicState extends State<CultureMusic> {
                   decoration: BoxDecoration(color: Colors.lightGreenAccent,borderRadius: BorderRadius.all(Radius.circular(10))),
                   child: Column(
                     children: [
-                      Text('Beautiful_Balochi_folk_song\':\n',style: TextStyle(fontFamily:'Bold')),
+                      // Text('Beautiful_Balochi_folk_song\':\n',style: TextStyle(fontFamily:'Bold')),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
@@ -333,18 +493,16 @@ class _CultureMusicState extends State<CultureMusic> {
                     ],
                   ),
                 ),
-                selection(_questionList6)
+                selection6(_questionList6)
 
               ],
             ),
           ]
         ),
 
-
         SizedBox(height: 10,),
 
         // getLocalFileDuration(),
-
       ],
     );
   }
@@ -382,10 +540,6 @@ class _CultureMusicState extends State<CultureMusic> {
       },
     );
   }
-
-
-
-
 }
 
 
