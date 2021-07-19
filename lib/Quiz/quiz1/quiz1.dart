@@ -184,8 +184,8 @@ class Quiz1State extends State<Quiz1> {
                     ),
                   ],
                 ),
-
-                //new Padding(padding: EdgeInsets.all(10.0)),
+               // SizedBox(50),
+               new Padding(padding: EdgeInsets.fromLTRB(0,40,0,0)),
                 new Container(
                   alignment: Alignment.bottomCenter,
                   child: new MaterialButton(
