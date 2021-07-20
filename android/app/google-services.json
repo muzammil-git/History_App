@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "579838829775",
-    "project_id": "historystorage-ac9e2",
-    "storage_bucket": "historystorage-ac9e2.appspot.com"
+    "project_number": "13748902909",
+    "project_id": "history-app-a4019",
+    "storage_bucket": "history-app-a4019.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:579838829775:android:802e94890e1879bc2703ba",
+        "mobilesdk_app_id": "1:13748902909:android:493755bbde853825c6d794",
         "android_client_info": {
           "package_name": "com.example.history_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "579838829775-lj84jsro7l3cu8pi9r2t6fuk2gq71lce.apps.googleusercontent.com",
+          "client_id": "13748902909-scel0f8fk7rnod672tla8ipe8pv6us5j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtWycYxk3E8JENIJ5EkttNEDf3t2CQnJE"
+          "current_key": "AIzaSyBugJJxsuzhs_lBjTJiIyOz4ZJS_nI6Z2w"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "579838829775-lj84jsro7l3cu8pi9r2t6fuk2gq71lce.apps.googleusercontent.com",
+              "client_id": "13748902909-scel0f8fk7rnod672tla8ipe8pv6us5j.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

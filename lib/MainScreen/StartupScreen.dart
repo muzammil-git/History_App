@@ -114,10 +114,10 @@ class _StartupScreenState extends State<StartupScreen> {
                             children: <Widget>[
                               Spacer(),
                               RichText(text: TextSpan(text: _appVersion,
-                                  style: TextStyle(color: Colors.black, fontSize: 15,decoration: TextDecoration.underline))),
+                                  style: TextStyle(color: Colors.black, fontSize: 15,))),
                               Spacer(flex: 4,),
                               RichText(text: TextSpan(text: platform,
-                                  style: TextStyle(color: Colors.black, fontSize: 15, decoration: TextDecoration.underline))),
+                                  style: TextStyle(color: Colors.black, fontSize: 15,))),
                               Spacer(),
                             ]
                         )

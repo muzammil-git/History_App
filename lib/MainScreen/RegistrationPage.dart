@@ -5,10 +5,9 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:history_app/MainScreen/TransitionScreen.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:history_app/MainScreen/mainPage.dart';
-
+import 'package:string_validator/string_validator.dart';
 import 'Content.dart';
-//TODO: Implement Scaffold for snackbar error messages //Done
-//TODO: Creating database reference and through that saving user data in database//Done
+
 
 class RegistrationPage extends StatefulWidget {
 
@@ -26,8 +25,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
   // var password = TextEditingController(text:"abc123");
 
   //Production Mode
-  var fullName = TextEditingController();
-  var contact = TextEditingController();
+  // var fullName = TextEditingController();
+  // var contact = TextEditingController();
   var email = TextEditingController();
   var password = TextEditingController();
 
@@ -68,9 +67,9 @@ class _RegistrationPageState extends State<RegistrationPage> {
 
         //Data format
         Map userMap = {
-          'Name': fullName.text,
+          // 'Name': fullName.text,
           'Email': email.text,
-          'Contact': contact.text,
+          // 'Contact': contact.text,
         };
 
         newUserRefer.set(userMap);
@@ -130,22 +129,22 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 child: Column(
                   children: [
                     //Name
-                    TextField(
-                      controller: fullName,
-                      keyboardType: TextInputType.name,
-                      decoration: InputDecoration(
-                          labelText: 'Full Name',
-                          labelStyle: TextStyle(
-                            fontSize: 14.0,
-                          ),
-                          hintStyle: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 10
-                          ),
-                        icon: Icon(Icons.person),
-                      ),
-                      style: TextStyle(fontSize: 14),
-                    ),
+                    // TextField(
+                    //   controller: fullName,
+                    //   keyboardType: TextInputType.name,
+                    //   decoration: InputDecoration(
+                    //       labelText: 'Full Name',
+                    //       labelStyle: TextStyle(
+                    //         fontSize: 14.0,
+                    //       ),
+                    //       hintStyle: TextStyle(
+                    //           color: Colors.grey,
+                    //           fontSize: 10
+                    //       ),
+                    //     icon: Icon(Icons.person),
+                    //   ),
+                    //   style: TextStyle(fontSize: 14),
+                    // ),
                     SizedBox(height: 10,),
                     //Email Address
                     TextField(
@@ -167,23 +166,23 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     ),
                     SizedBox(height: 10,),
                     //Contact Number
-                    TextField(
-                      controller: contact,
-                      keyboardType: TextInputType.emailAddress,
-                      decoration: InputDecoration(
-                          labelText: 'Contact Number',
-                          labelStyle: TextStyle(
-                            fontSize: 14.0,
-                          ),
-                          hintStyle: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 10
-                          ),
-                        icon: Icon(Icons.phone),
-
-                      ),
-                      style: TextStyle(fontSize: 14),
-                    ),
+                    // TextField(
+                    //   controller: contact,
+                    //   keyboardType: TextInputType.emailAddress,
+                    //   decoration: InputDecoration(
+                    //       labelText: 'Contact Number',
+                    //       labelStyle: TextStyle(
+                    //         fontSize: 14.0,
+                    //       ),
+                    //       hintStyle: TextStyle(
+                    //           color: Colors.grey,
+                    //           fontSize: 10
+                    //       ),
+                    //     icon: Icon(Icons.phone),
+                    //
+                    //   ),
+                    //   style: TextStyle(fontSize: 14),
+                    // ),
                     SizedBox(height: 10,),
                     //Password
                     TextField(
@@ -229,10 +228,21 @@ class _RegistrationPageState extends State<RegistrationPage> {
                     return;
                   }
 
-                  if(fullName.text.length < 3){
-                    showSnackBar('Please Provide a valid name',context);
+                  if(!isEmail(email.text)){
+                    print(email.text);
+                    showSnackBar('Please Provide a valid Email',scaffoldKey.currentContext);
                     return;
                   }
+
+                  if(password.text.length < 3){
+                    showSnackBar('Provide a complex Password', scaffoldKey.currentContext);
+                    return;
+                  }
+
+                  // if(fullName.text.length < 3){
+                  //   showSnackBar('Please Provide a valid name',context);
+                  //   return;
+                  // }
 
                   registerUser();
                 },

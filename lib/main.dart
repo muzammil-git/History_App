@@ -38,12 +38,12 @@ Future<void> main() async {
           )
         : const FirebaseOptions(
             //ANDROID //Configured from google-service.json
-            appId: '1:579838829775:android:802e94890e1879bc2703ba',
+            appId: '1:13748902909:android:493755bbde853825c6d794',
             apiKey: 'AIzaSyCex3aSnfh8z4qUiOmI965DDyllORIlQLw',
-            messagingSenderId: '297855924061',
-            projectId: 'historystorage-ac9e2',
+            messagingSenderId: '13748902909',
+            projectId: 'history-app-a4019',
             databaseURL:
-                'https://historystorage-ac9e2-default-rtdb.firebaseio.com/',
+                'https://history-app-a4019-default-rtdb.asia-southeast1.firebasedatabase.app/',
           ),
   );
   runApp(MyApp());
@@ -61,10 +61,10 @@ class MyApp extends StatelessWidget {
       ),
 
       //---Production Route---
-      // initialRoute: StartupScreen.id,
+      initialRoute: StartupScreen.id,
 
       //---Testing Route---
-      initialRoute: Content.id,
+      // initialRoute: Content.id,
       // initialRoute: ShowVideo.id,
 
       routes: {

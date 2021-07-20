@@ -4,6 +4,7 @@ import 'package:history_app/Heroes/heroesScreen.dart';
 import 'package:history_app/Map/PakistanMap.dart';
 import 'package:history_app/Quiz/quiz1/quiz1.dart';
 import 'package:history_app/Quiz/quiz5/quiz5.dart';
+import 'package:history_app/Youtube%20Video/ShowVideo.dart';
 
 class Content extends StatelessWidget {
 
@@ -41,10 +42,11 @@ class Content extends StatelessWidget {
             // SizedBox(height: 40,),
 
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 ContentButton('Geography', PakistanMap.id),
-                SizedBox(width: 199,),
+                ContentButton('Video', ShowVideo.id),
                 ContentButton('Human Rights', Quiz5.id)
               ],
             ),

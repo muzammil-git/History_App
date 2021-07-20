@@ -1,3 +1,4 @@
+//@dart=2.9
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -6,6 +7,7 @@ import 'package:history_app/MainScreen/RegistrationPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:connectivity/connectivity.dart';
+import 'package:string_validator/string_validator.dart';
 
 class LoginPage extends StatefulWidget {
   //TODO: Implement Circular widget for waiting //Done
@@ -142,7 +144,7 @@ class _LoginPageState extends State<LoginPage> {
                               color: Colors.orange,
                               fontSize: 10
                           ),
-                        icon: Icon(Icons.person)
+                        icon: Icon(Icons.email_outlined)
                       ),
                       style: TextStyle(fontSize: 14),
                     ),
@@ -191,10 +193,12 @@ class _LoginPageState extends State<LoginPage> {
                     return;
                   }
                   //TODO: Provide valid email
-                  if(email.text.length < 3){
-                    showSnackBar('Please Provide a valid Email',context);
+                  if(!isEmail(email.text)){
+                    print(email.text);
+                    showSnackBar('Please Provide a valid Email',scaffoldKey.currentContext);
                     return;
                   }
+
                   if(password.text.length <4){
                     showSnackBar('Please Provide a valid password',context);
                     return;

@@ -69,24 +69,30 @@ class _ShowVideoState extends State<ShowVideo> {
 
   @override
   Widget build(BuildContext context){
-    return ListView.separated(
-      itemBuilder: (context, index) {
-        return YoutubePlayer(
-          key: ObjectKey(_controllers[index]),
-          controller: _controllers[index],
-          actionsPadding: const EdgeInsets.only(left: 16.0),
-          bottomActions: [
-            CurrentPosition(),
-            const SizedBox(width: 10.0),
-            ProgressBar(isExpanded: true),
-            const SizedBox(width: 10.0),
-            RemainingDuration(),
-            FullScreenButton(),
-          ],
-        );
-      },
-      itemCount: _controllers.length,
-      separatorBuilder: (context, _) => const SizedBox(height: 10.0),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black12,
+        title: Text('Watch List'),
+      ),
+      body: ListView.separated(
+        itemBuilder: (context, index) {
+          return YoutubePlayer(
+            key: ObjectKey(_controllers[index]),
+            controller: _controllers[index],
+            actionsPadding: const EdgeInsets.only(left: 16.0),
+            bottomActions: [
+              CurrentPosition(),
+              const SizedBox(width: 10.0),
+              ProgressBar(isExpanded: true),
+              const SizedBox(width: 10.0),
+              RemainingDuration(),
+              FullScreenButton(),
+            ],
+          );
+        },
+        itemCount: _controllers.length,
+        separatorBuilder: (context, _) => const SizedBox(height: 10.0),
+      ),
     );
     //   YoutubePlayer(
     //   controller: _controller,
