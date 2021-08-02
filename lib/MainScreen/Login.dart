@@ -108,16 +108,14 @@ class _LoginPageState extends State<LoginPage> {
           padding: EdgeInsets.all(8.0),
           child: Column(
             children:<Widget>[
-              SizedBox(height: 80.0,),
+              SizedBox(height: 60.0,),
               SizedBox(
                 width: 200,
-                height: 160,
+                height: 190,
                 child: Image(
                   alignment: Alignment.center,
-                  width: 300,
-                  height: 300,
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/images/Logo/logo.jpeg',),
+                  image: AssetImage('assets/images/Logo/custom_Logo_crop.png',),
                 ),
               ),
               SizedBox(height: 10,),

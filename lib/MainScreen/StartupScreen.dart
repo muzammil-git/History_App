@@ -49,14 +49,17 @@ class _StartupScreenState extends State<StartupScreen> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            SizedBox(height: 100,),
-                            Text('History of Pakistan',
-                              style: TextStyle(fontFamily: "Quote", fontWeight: FontWeight.bold,
+                            SizedBox(height: 80,),
+                            Text('Connecting Cultures',
+                              style: TextStyle(color: Color(0xFF298AC2),fontFamily: "Quote", fontWeight: FontWeight.bold,
                                   fontSize: 32),),
-                            Image.asset(
-                              'assets/images/Logo/logo.jpeg',
+                            SizedBox(
                               height: 350,
-                              width: 350,
+                              child: Image.asset(
+                                'assets/images/Logo/custom_Logo_crop.png',
+                                height: 220,
+                                width: 220,
+                              ),
                             ),
                             //TODO:Quotes
                             Padding(

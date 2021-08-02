@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.history_app">
+    package="com.connecting.history_app">
    <application
-        android:label="history_app"
+        android:label="Connecting Culture"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

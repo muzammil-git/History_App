@@ -102,17 +102,17 @@ class _RegistrationPageState extends State<RegistrationPage> {
           padding: EdgeInsets.all(8.0),
           child: Column(
             children:<Widget>[
-              SizedBox(height: 80.0,),
+              SizedBox(height: 60.0,),
               //Logo
               SizedBox(
                 width: 200,
-                height: 160,
+                height: 190,
                 child: Image(
                   alignment: Alignment.center,
                   width: 300,
                   height: 300,
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/images/Logo/logo.jpeg',),
+                  image: AssetImage('assets/images/Logo/custom_Logo_crop.png',),
                 ),
               ),
               SizedBox(height: 20,),
@@ -164,7 +164,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       ),
                       style: TextStyle(fontSize: 14),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: 20,),
                     //Contact Number
                     // TextField(
                     //   controller: contact,
@@ -216,7 +216,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 ),
               ),
 
-              SizedBox(height: 20,),
+              SizedBox(height: 35,),
               //Register Button
               ElevatedButton(
                 onPressed: ()async{

@@ -86,7 +86,6 @@ class MyApp extends StatelessWidget {
         PakistanMap.id: (context) => PakistanMap(),
         HeroesScreen.id: (context) => HeroesScreen(),
         ContinentMap.id: (context) => ContinentMap(),
-
         //Faiz's Work
         CultureMusic.id: (context) => CultureMusic(),
         DressPage1.id: (context) => DressPage1(),
