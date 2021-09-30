@@ -1,6 +1,6 @@
 //@dart=2.9
 import 'dart:ui';
-import 'package:audioplayers/audio_cache.dart';
+// import 'package:audioplayers/audio_cache.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -36,7 +36,7 @@ class _CultureMusicState extends State<CultureMusic> {
   void dispose() {
     // TODO: implement dispose
     super.dispose();
-    audioCache.clearCache();
+    // audioCache.clearCache();
     advancedPlayer.dispose();
   }
 
@@ -507,7 +507,7 @@ class _CultureMusicState extends State<CultureMusic> {
   }
 
   Future<int> _getDuration() async {
-    File audiofile = await audioCache.load('audio/Sindhi_cultural_Algoza_saaz.mp3');
+    File audiofile = (await audioCache.load('audio/Sindhi_cultural_Algoza_saaz.mp3')) as File;
     await advancedPlayer.setUrl(
       audiofile.path,
     );

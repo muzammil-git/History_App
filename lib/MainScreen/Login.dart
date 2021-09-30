@@ -59,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
           password: password.text
       );
 
-      //checks if the user's registration is successful
+      //checks if the user's login is successful
       if(userCredential != null){
         showSnackBar('Login Successful', scaffoldKey.currentContext);
         print('Login Successful');

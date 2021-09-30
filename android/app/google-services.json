@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "13748902909",
+    "firebase_url": "https://history-app-a4019-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "history-app-a4019",
     "storage_bucket": "history-app-a4019.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:13748902909:android:493755bbde853825c6d794",
+        "mobilesdk_app_id": "1:13748902909:android:30d8d0b36e33bb5fc6d794",
         "android_client_info": {
-          "package_name": "com.example.history_app"
+          "package_name": "com.connecting.history_app"
         }
       },
       "oauth_client": [
