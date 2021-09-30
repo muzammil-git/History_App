@@ -5,17 +5,17 @@ import 'package:history_app/NewFeature/second_screen/third_screen.dart';
 import 'package:history_app/NewFeature/second_screen/account.dart';
 
 import 'dart:core';
-void main() {
-  runApp(hero());
-}
 
-class hero extends StatefulWidget {
+class Feature extends StatefulWidget {
+  static const String id = 'NewFeature';
+
+  const Feature({Key key}) : super(key: key);
+
   @override
-  _heroState createState() => _heroState();
+  _FeatureState createState() => _FeatureState();
 }
-//tuition app online
-class _heroState extends State<hero> {
 
+class _FeatureState extends State<Feature> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(debugShowCheckedModeBanner: false,
@@ -27,18 +27,18 @@ class _heroState extends State<hero> {
         child: Scaffold(
             appBar: AppBar(
               flexibleSpace: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
 
-                TabBar(
-                  indicatorColor: Colors.purple,
+                    TabBar(
+                        indicatorColor: Colors.purple,
 
-                  tabs:[
-                    //wrapped text with tab to increase the size of tabs
-                    //can also add icons
-                    Tab(child: Text('AREA',style:(TextStyle(fontSize: 20, fontWeight: FontWeight.bold,fontStyle: FontStyle.italic)))),
-                    Tab(child: Text('POPULATION',style:(TextStyle(fontSize: 20, fontWeight: FontWeight.bold,fontStyle: FontStyle.italic))),) ,
-                  ]) ]),
+                        tabs:[
+                          //wrapped text with tab to increase the size of tabs
+                          //can also add icons
+                          Tab(child: Text('AREA',style:(TextStyle(fontSize: 20, fontWeight: FontWeight.bold,fontStyle: FontStyle.italic)))),
+                          Tab(child: Text('POPULATION',style:(TextStyle(fontSize: 20, fontWeight: FontWeight.bold,fontStyle: FontStyle.italic))),) ,
+                        ]) ]),
             ),
 
 
@@ -63,30 +63,32 @@ class _heroState extends State<hero> {
                       ),
                     ] ),
                   ) ] )),
-             Center(child:Column(
-                 children: [Expanded(
-                   child: Column(children: [
-                     // SizedBox(height: 50,),
-                     Draggable7(),
-                     Draggable6(),
-                     Draggable8(),
-                     Draggable5(),
-                     Column(
-                       children:[
-                         Dragtarget1(),
-                         // SizedBox(height: 40),
-                         DragTargetWidget2(),
-                         DragTarget3(),
-                         DragTarget4()
-                       ],
-                     ),
-                   ] ),
-                 ) ] ) ),
+              Center(child:Column(
+                  children: [Expanded(
+                    child: Column(children: [
+                      // SizedBox(height: 50,),
+                      Draggable7(),
+                      Draggable6(),
+                      Draggable8(),
+                      Draggable5(),
+                      Column(
+                        children:[
+                          Dragtarget1(),
+                          // SizedBox(height: 40),
+                          DragTargetWidget2(),
+                          DragTarget3(),
+                          DragTarget4()
+                        ],
+                      ),
+                    ] ),
+                  ) ] ) ),
             ],)
 
         ),
       ),
     );
   }
+
 }
+
 

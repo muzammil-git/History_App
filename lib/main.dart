@@ -22,6 +22,7 @@ import 'package:history_app/Youtube%20Video/ShowVideo.dart';
 import 'dart:io';
 
 import 'Culture/CulturalMusic/CultureMusic.dart';
+import 'NewFeature/Feature.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -86,6 +87,7 @@ class MyApp extends StatelessWidget {
         PakistanMap.id: (context) => PakistanMap(),
         HeroesScreen.id: (context) => HeroesScreen(),
         ContinentMap.id: (context) => ContinentMap(),
+        Feature.id:(context)=> Feature(),
         //Faiz's Work
         CultureMusic.id: (context) => CultureMusic(),
         DressPage1.id: (context) => DressPage1(),
