@@ -60,6 +60,16 @@ class Content extends StatelessWidget {
               ],
             ),
 
+            //New Feature
+            SizedBox(height: 30,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ContentButton('New Feature', 'NewFeature')
+              ],
+            ),
+
+
           ],
         ),
       ),

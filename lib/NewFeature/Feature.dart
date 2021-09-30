@@ -18,7 +18,7 @@ class Feature extends StatefulWidget {
 class _FeatureState extends State<Feature> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,
+    return MaterialApp(debugShowCheckedModeBanner: true,
       theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,
           primaryColor: Colors.purple
@@ -26,6 +26,8 @@ class _FeatureState extends State<Feature> {
       home: DefaultTabController(length: 2,   //without this the tabbar doesnt work, plus lenght and child are must haves.
         child: Scaffold(
             appBar: AppBar(
+              leading: IconButton(icon: Icon(Icons.arrow_back), onPressed: () { Navigator.pop(context);},
+              ),
               flexibleSpace: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
@@ -36,6 +38,7 @@ class _FeatureState extends State<Feature> {
                         tabs:[
                           //wrapped text with tab to increase the size of tabs
                           //can also add icons
+                          // Tab(child: Text('Hey'),),
                           Tab(child: Text('AREA',style:(TextStyle(fontSize: 20, fontWeight: FontWeight.bold,fontStyle: FontStyle.italic)))),
                           Tab(child: Text('POPULATION',style:(TextStyle(fontSize: 20, fontWeight: FontWeight.bold,fontStyle: FontStyle.italic))),) ,
                         ]) ]),
