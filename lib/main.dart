@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:history_app/AddOns/great%20migration.dart';
+import 'package:history_app/AddOns/humanrights.dart';
+import 'package:history_app/AddOns/journeytopak.dart';
+import 'package:history_app/AddOns/mughalsWork.dart';
+import 'package:history_app/AddOns/paki_heroes.dart';
+import 'package:history_app/AddOns/state&democracy.dart';
 import 'package:history_app/Culture/CulturalDresses/DressPage1.dart';
 import 'package:history_app/Culture/CulturalDresses/DressPage2.dart';
 import 'package:history_app/Heroes/heroesScreen.dart';
@@ -62,11 +68,20 @@ class MyApp extends StatelessWidget {
       ),
 
       //---Production Route---
-      initialRoute: StartupScreen.id,
+      // initialRoute: StartupScreen.id,
+      initialRoute: Content.id,
 
       //---Testing Route---
       // initialRoute: Content.id,
       // initialRoute: Feature.id,
+      // initialRoute: journeyOne.id,
+      // initialRoute: mughalsWork.id,
+      // initialRoute: pakiHeros.id,
+      // initialRoute: greatMigration.id,
+      // initialRoute: statesDemocracy.id,
+
+
+
 
       routes: {
         //Muzammil's Work
@@ -93,6 +108,15 @@ class MyApp extends StatelessWidget {
         DressPage1.id: (context) => DressPage1(),
         DressPage2.id: (context) => DressPage2(),
         // checkPlayer.id: (context) => checkPlayer(),
+
+        //Farwa's Work AddOn
+        journeyOne.id : (context) => journeyOne(), //
+        mughalsWork.id : (context) => mughalsWork(),
+        pakiHeros.id : (context) => pakiHeros(),
+        greatMigration.id : (context) => greatMigration(),
+        humanRights.id : (context) => humanRights(),
+        statesDemocracy.id : (context) => statesDemocracy(),
+
       },
     );
   }

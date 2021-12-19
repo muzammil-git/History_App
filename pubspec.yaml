@@ -117,6 +117,71 @@ flutter:
     - assets/images/dress/sindhi.PNG
     - assets/images/dress/punjabi.PNG
 
+    #Addons
+    - assets/images/new/Ibrahim Lodhi.jpeg
+    - assets/images/new/akbar.jpeg
+    - assets/images/new/Bahadur shah zafar.jpeg
+    - assets/images/new/The divine religion.jpeg
+    - assets/images/new/shah-jahan.jpeg
+    - assets/images/new/Babur.jpeg
+    - assets/images/new/war of indepence.webp
+    - assets/images/new/British won 1857.jpeg
+    - assets/images/new/camps for migrants.jpeg
+    - assets/images/new/people killed.jpeg
+    - assets/images/new/the great migration.jpeg
+    - assets/images/new/trains.jpeg
+    - assets/images/new/women during migration.jpeg
+    - assets/images/new/a_king_or_queen.jpeg
+    - assets/images/new/bangladesh.png
+    - assets/images/new/government.jpg
+    - assets/images/new/Pakistan.jpeg
+    - assets/images/new/powerpeople.png
+    - assets/images/new/rights of people.png
+    - assets/images/new/screenshot.png
+    - assets/images/new/Sovereignty2.jpeg
+    - assets/images/new/voting.jpg
+    - assets/images/new/reformer.jpg
+    - assets/images/new/Aligarh College.jpeg
+    - assets/images/new/Aligarh Movement.png
+    - assets/images/new/Allam Iqbal poetry.png
+    - assets/images/new/Ambassador of Hindu Muslim Unity.png
+    - assets/images/new/communication skills.jpeg
+    - assets/images/new/Fatima Jinnah.jpeg
+    - assets/images/new/Quaid e azam.jpeg
+    - assets/images/new/Sir-Syed-Ahmad-Khan.jpeg
+    - assets/images/new/The poet of the East.jpeg
+    - assets/images/new/two nations theory.jpeg
+    - assets/images/new/Urdu Hindi Controversy.png
+    - assets/images/new/women-political-participation.jpeg
+    - assets/images/new/Aligarh College.jpeg
+    - assets/images/new/Babur copy.jpeg
+    - assets/images/new/British Eduation.png
+    - assets/images/new/Indian National congress.jpeg
+    - assets/images/new/Muslim League.png
+    - assets/images/new/Screenshot 2021-10-13 at 8.28.01 AM.png
+    - assets/images/new/Sir syed.jpeg
+    - assets/images/new/two nations theoy copy.jpeg
+    - assets/images/new/war of independence.jpeg
+    - assets/images/new/Pakistan Resolution.jpeg
+    - assets/images/new/cyrus_cylinder copy.jpeg
+    - assets/images/new/war.jpg
+    - assets/images/new/alliance2.png
+    - assets/images/new/allied-powers.jpeg
+    - assets/images/new/central powers.png
+    - assets/images/new/CYRUS copy.png
+    - assets/images/new/Germany.jpeg
+    - assets/images/new/King John.jpeg
+    - assets/images/new/machine guns copy.jpeg
+    - assets/images/new/magna carta.jpg
+    - assets/images/new/people died .jpeg
+    - assets/images/new/Right to fair Trial.jpeg
+    - assets/images/new/treatyof versailles.jpg
+    - assets/images/new/socrates-9488126-1-402 copy.jpeg
+    - assets/images/new/UDHR.jpeg
+    - assets/images/new/xenophon copy.jpeg
+    - assets/images/new/hitler.jpg
+
+
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 

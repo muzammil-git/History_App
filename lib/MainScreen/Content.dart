@@ -65,7 +65,9 @@ class Content extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ContentButton('New Feature', 'NewFeature')
+                ContentButton('New Feature', 'NewFeature'),
+                SizedBox(width: 50,),
+                ContentButton('Piquiz', 'journeyScreenOne')
               ],
             ),
 
@@ -79,7 +81,7 @@ class Content extends StatelessWidget {
 
 class ContentButton extends StatelessWidget {
 
-  ContentButton([this.name, this.routeId]);
+  ContentButton(this.name, this.routeId);
   final String name;
   final String routeId;
 
