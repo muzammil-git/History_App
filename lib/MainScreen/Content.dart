@@ -65,8 +65,6 @@ class Content extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ContentButton('New Feature', 'NewFeature'),
-                SizedBox(width: 50,),
                 ContentButton('Piquiz', 'journeyScreenOne')
               ],
             ),

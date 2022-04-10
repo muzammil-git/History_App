@@ -22,39 +22,30 @@ import 'package:history_app/Quiz/quiz3/quiz3.dart';
 import 'package:history_app/Quiz/quiz4/quiz4.dart';
 import 'package:history_app/Quiz/quiz5/quiz5.dart';
 
-import 'package:firebase_core/firebase_core.dart';
 import 'package:history_app/MainScreen/mainPage.dart';
+import 'package:history_app/Utils/UserSimplePreferences.dart';
 import 'package:history_app/Youtube%20Video/ShowVideo.dart';
 import 'dart:io';
 
 import 'Culture/CulturalMusic/CultureMusic.dart';
 import 'NewFeature/Feature.dart';
 
-Future<void> main() async {
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final FirebaseApp app = await Firebase.initializeApp(
-    // name: 'db6',
-    options: Platform.isIOS || Platform.isMacOS
-        ? const FirebaseOptions(
-            //IOS
-            appId: '1:297855924061:ios:c6de2b69b03a5be8',
-            apiKey: 'AIzaSyD_shO5mfO9lhy2TVWhfo1VUmARKlG4suk',
-            projectId: 'flutter-firebase-plugins',
-            messagingSenderId: '297855924061',
-            databaseURL: 'https://flutterfire-cd2f7.firebaseio.com',
-          )
-        : const FirebaseOptions(
-            //ANDROID //Configured from google-service.json
-            appId: '1:13748902909:android:493755bbde853825c6d794',
-            apiKey: 'AIzaSyCex3aSnfh8z4qUiOmI965DDyllORIlQLw',
-            messagingSenderId: '13748902909',
-            projectId: 'history-app-a4019',
-            databaseURL:
-                'https://history-app-a4019-default-rtdb.asia-southeast1.firebasedatabase.app/',
-          ),
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  await UserSimplePreferences.init();
+  var email = UserSimplePreferences.getUserEmail();
+  print("Main file: $email");
+
   runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   @override
@@ -68,8 +59,8 @@ class MyApp extends StatelessWidget {
       ),
 
       //---Production Route---
-      // initialRoute: StartupScreen.id,
-      initialRoute: Content.id,
+      initialRoute: StartupScreen.id,
+      // initialRoute: Content.id,
 
       //---Testing Route---
       // initialRoute: Content.id,

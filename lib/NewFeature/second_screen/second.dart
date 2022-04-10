@@ -3,69 +3,6 @@ import 'dart:collection';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-//
-// class forEach extends StatefulWidget {
-//
-//
-//   @override
-//   _forEachState createState() => _forEachState();
-// }
-//
-//
-// class _forEachState extends State<forEach> {
-//   List<friend> Friends =
-//    [ friend(name: 'Farwa', color: 0xFFFFF8E1),
-//     friend(name: 'Sajjad', color: 0xFFFCE4EC),
-//     friend(name: 'Jaffer', color:0XFFFFFDE7)
-//   ];
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title:Text('forEach Method'),
-//           backgroundColor: Colors.deepPurple,
-//         ),
-//         floatingActionButton: FloatingActionButton(
-//           backgroundColor: Colors.deepPurple,
-//           child: Icon(Icons.info_outline_sharp),
-//           onPressed: (){
-//             Friends.forEach((friend) {
-//               friend.color=(Random().nextDouble()* 0xFFFFFFFF).toInt();
-//             });
-//             setState(() {
-//
-//             });
-//           },
-//
-//         ),
-//
-//         body: ListView.separated(itemBuilder: (context, index){
-//           return Container(
-//             color: Color(Friends[index].color),
-//             child: ListTile(
-//               title:Text(Friends[index].name),
-//
-//             ),
-//           );
-//         },
-//             separatorBuilder: (context, index){
-//           return Divider();
-//             },
-//             itemCount: Friends.length
-//         ),
-//       ),
-//     );
-//   }
-// }
-//
-// class friend {
-// String name;
-// int color;
-// friend({this.name, this.color});
-// }
-//1
-//TODO make dragtarget round
 class Dragtarget1 extends StatefulWidget {
   @override
   _Dragtarget1State createState() => _Dragtarget1State();

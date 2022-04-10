@@ -28,7 +28,7 @@ class _DressPage2State extends State<DressPage2> {
               style: TextStyle(fontFamily: "Bold", fontSize: 20),
             ),
             SizedBox(
-              height: 30,
+              height: 25,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -44,7 +44,7 @@ class _DressPage2State extends State<DressPage2> {
               DragTarget4(),
               DragTarget6(),
             ]),
-            SizedBox(height: 20),
+            // SizedBox(height: 05),
             DragTarget5(),
             SizedBox(
               height: 25,

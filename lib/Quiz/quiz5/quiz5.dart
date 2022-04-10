@@ -77,9 +77,9 @@ class Quiz5State extends State<Quiz5> {
               ),
 
               //image
-              new Padding(padding: EdgeInsets.all(10.0)),
+              new Padding(padding: EdgeInsets.all(02.0)),
               SizedBox(
-                height: 300,
+                height: 260,
 
                 child: new Image.asset(
                     "assets/images/quiz5/${quiz.images[questionNumber]}",

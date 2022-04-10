@@ -51,8 +51,15 @@ class _FeatureState extends State<Feature> {
                   children: [Expanded(
                     child: Column(children: [
                       // SizedBox(height: 50,),
-                      Draggables3(),
-                      Draggable2(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Draggables3(),
+                          Draggable2(),
+
+                        ],
+                      ),
+
                       Draggable4(),
                       Draggable1(),
                       Column(
@@ -64,14 +71,38 @@ class _FeatureState extends State<Feature> {
                           DragTarget4()
                         ],
                       ),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              'Content', (Route<dynamic> route) => false);
+                          print('Done');
+                        },
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.red,
+                            onPrimary: Colors.white,
+                            textStyle: TextStyle(
+                                letterSpacing: 0.5,
+                                fontFamily: "Bold",
+                                fontSize: 15),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30))),
+                        child: Text('Quit'),
+                      ),
+
                     ] ),
                   ) ] )),
               Center(child:Column(
                   children: [Expanded(
                     child: Column(children: [
                       // SizedBox(height: 50,),
-                      Draggable7(),
-                      Draggable6(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Draggable7(),
+                          Draggable6(),
+                        ],
+                      ),
+
                       Draggable8(),
                       Draggable5(),
                       Column(
@@ -80,12 +111,34 @@ class _FeatureState extends State<Feature> {
                           // SizedBox(height: 40),
                           DragTargetWidget2(),
                           DragTarget3(),
-                          DragTarget4()
+                          DragTarget4(),
+                          ElevatedButton(
+                            onPressed: () {
+                              Navigator.of(context).pushNamedAndRemoveUntil(
+                                  'Content', (Route<dynamic> route) => false);
+                              print('Done');
+                            },
+                            style: ElevatedButton.styleFrom(
+                                primary: Colors.red,
+                                onPrimary: Colors.white,
+                                textStyle: TextStyle(
+                                    letterSpacing: 0.5,
+                                    fontFamily: "Bold",
+                                    fontSize: 15),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(30))),
+                            child: Text('Quit'),
+                          ),
+
                         ],
                       ),
                     ] ),
                   ) ] ) ),
-            ],)
+
+            ],
+
+
+            )
 
         ),
       ),

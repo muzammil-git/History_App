@@ -7,6 +7,7 @@ import 'package:history_app/MainScreen/RegistrationPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:connectivity/connectivity.dart';
+import 'package:history_app/Utils/UserSimplePreferences.dart';
 import 'package:string_validator/string_validator.dart';
 
 class LoginPage extends StatefulWidget {
@@ -43,6 +44,16 @@ class _LoginPageState extends State<LoginPage> {
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    email.text= UserSimplePreferences.getUserEmail() ?? "";
+    print("Email.text: ${email.text}");
+    print(email);
+  }
+
   void loginUser()async{
 
     showDialog(
@@ -50,7 +61,6 @@ class _LoginPageState extends State<LoginPage> {
       context: scaffoldKey.currentContext,
       builder: (BuildContext context) => TransitionScreen(message: 'Wait for Login'),
     );
-
 
 
     try {
@@ -63,6 +73,8 @@ class _LoginPageState extends State<LoginPage> {
       if(userCredential != null){
         showSnackBar('Login Successful', scaffoldKey.currentContext);
         print('Login Successful');
+        await UserSimplePreferences.setEmail(userCredential.user.email);
+        print("User setEmail: ${userCredential.user.email} ");
 
         //Saving User Data
         DatabaseReference newUserRefer = FirebaseDatabase.instance.reference().child('user/${userCredential.user.uid}');

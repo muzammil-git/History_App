@@ -118,7 +118,7 @@ class _ContinentMapState extends State<ContinentMap> {
                       child: ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).pushNamedAndRemoveUntil(
-                              'Quiz2', (Route<dynamic> route) => false);
+                              'Quiz4', (Route<dynamic> route) => false);
                           print('Done');
                         },
                         style: ElevatedButton.styleFrom(

@@ -63,7 +63,9 @@ class _Draggable1State extends State<Draggable1> {
   Widget build(BuildContext context) {
   Widget tile1=  Padding(
     padding: const EdgeInsets.all(8.0),
-    child: Container(decoration: BoxDecoration(color: Colors.deepPurple,
+    child: Container(
+      height: 60,
+      decoration: BoxDecoration(color: Colors.deepPurple,
         boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),
       spreadRadius: 5,
       blurRadius: 7,
@@ -71,7 +73,7 @@ class _Draggable1State extends State<Draggable1> {
       child: Card(
         color: Colors.white,
         child: ListTile(
-          title: Text('KPK', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+          title: Text('KPK', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
               color: Colors.deepPurple),),
 
           trailing: Icon(Icons.drag_handle,
@@ -118,7 +120,10 @@ class _Draggable2State extends State<Draggable2> {
   Widget build(BuildContext context) {
     Widget tile2= Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(decoration: BoxDecoration(color: Colors.deepPurple,
+      child: Container(
+        height: 60,
+        width: 160,
+        decoration: BoxDecoration(color: Colors.deepPurple,
           boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),
         spreadRadius: 5,
         blurRadius: 7,
@@ -126,7 +131,7 @@ class _Draggable2State extends State<Draggable2> {
         child: Card(
           color: Colors.white,
           child: ListTile(
-            title: Text('SINDH', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+            title: Text('SINDH', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
                 color: Colors.deepPurple),),
 
             trailing: Icon(Icons.drag_handle,
@@ -174,7 +179,10 @@ class _Draggable3State extends State<Draggables3> {
   Widget build(BuildContext context) {
     Widget tile3=  Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(decoration: BoxDecoration(
+      child: Container(
+        height: 60,
+        width: 160,
+        decoration: BoxDecoration(
           color: Colors.deepPurple,
           boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),
         spreadRadius: 5,
@@ -183,7 +191,7 @@ class _Draggable3State extends State<Draggables3> {
         child: Card(
           color: Colors.white,
           child: ListTile(
-            title: Text('PUNJAB', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+            title: Text('PUNJAB', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
                 color: Colors.deepPurple),),
 
             trailing: Icon(Icons.drag_handle,
@@ -198,7 +206,7 @@ class _Draggable3State extends State<Draggables3> {
         child: tile3,
         feedback: Card(
           child: Container(
-            width: 400,
+            width: 100,
             height: 50,
             child:Text('PUNJAB', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
                 color: Colors.deepPurple),),
@@ -227,7 +235,9 @@ class _Draggable4State extends State<Draggable4> {
   @override
   Widget build(BuildContext context) { Widget tile4=  Padding(
     padding: const EdgeInsets.all(8.0),
-    child: Container(decoration: BoxDecoration(color: Colors.deepPurple,
+    child: Container(
+      height: 60,
+      decoration: BoxDecoration(color: Colors.deepPurple,
         boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),
       spreadRadius: 5,
       blurRadius: 7,
@@ -235,7 +245,7 @@ class _Draggable4State extends State<Draggable4> {
       child: Card(
         color: Colors.white,
         child: ListTile(
-          title: Text('BALOCHISTAN', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+          title: Text('BALOCHISTAN', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
               color: Colors.deepPurple),),
 
           trailing: Icon(Icons.drag_handle,
@@ -291,7 +301,7 @@ class _Draggable5State extends State<Draggable5> {
         child: Card(
           color: Colors.white,
           child: ListTile(
-            title: Text('PUNJAB', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+            title: Text('PUNJAB', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
                 color: Colors.deepPurple),),
 
             trailing: Icon(Icons.drag_handle_rounded,
@@ -341,7 +351,9 @@ class _Draggable6State extends State<Draggable6> {
   Widget build(BuildContext context) {
     Widget tile6=  Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(decoration: BoxDecoration(color: Colors.deepPurple,
+      child: Container(
+        width: 140,
+        decoration: BoxDecoration(color: Colors.deepPurple,
           boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),
             spreadRadius: 5,
             blurRadius: 7,
@@ -349,7 +361,7 @@ class _Draggable6State extends State<Draggable6> {
         child: Card(
           color: Colors.white,
           child: ListTile(
-            title: Text('SINDH', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+            title: Text('SINDH', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
                 color: Colors.deepPurple),),
 
             trailing: Icon(Icons.drag_handle,
@@ -396,7 +408,9 @@ class _Draggable7State extends State<Draggable7> {
   Widget build(BuildContext context) {
     Widget tile7=  Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(decoration: BoxDecoration(color: Colors.deepPurple,
+      child: Container(
+        width: 190,
+        decoration: BoxDecoration(color: Colors.deepPurple,
           boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.5),
             spreadRadius: 5,
             blurRadius: 7,
@@ -404,7 +418,7 @@ class _Draggable7State extends State<Draggable7> {
         child: Card(
           color: Colors.white,
           child: ListTile(
-            title: Text('BALOCHISTAN', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+            title: Text('BALOCHISTAN', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
                 color: Colors.deepPurple),),
 
             trailing: Icon(Icons.drag_handle_sharp,
@@ -459,7 +473,7 @@ class _Draggable8State extends State<Draggable8> {
         child: Card(
           color: Colors.white,
           child: ListTile(
-            title: Text('KPK', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20,
+            title: Text('KPK', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15,
                 color: Colors.deepPurple),),
 
             trailing: Icon(Icons.drag_handle_outlined,

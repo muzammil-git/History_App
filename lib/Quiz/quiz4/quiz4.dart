@@ -272,10 +272,10 @@ class Summary extends StatelessWidget{
 
                   Navigator.of(context).pushNamedAndRemoveUntil('Content', (Route<dynamic> route) => false);
                 },
-                child: new Text("Done",
+                child: new Text("Continue",
                   style: new TextStyle(
                       fontSize: 20.0,
-                      color: Colors.white
+                      color: Colors.white,
                   ),),)
 
             ],

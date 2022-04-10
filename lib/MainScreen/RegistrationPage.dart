@@ -5,6 +5,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:history_app/MainScreen/TransitionScreen.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:history_app/MainScreen/mainPage.dart';
+import 'package:history_app/Utils/UserSimplePreferences.dart';
 import 'package:string_validator/string_validator.dart';
 import 'Content.dart';
 
@@ -43,6 +44,15 @@ class _RegistrationPageState extends State<RegistrationPage> {
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+
+    email.text = UserSimplePreferences.getUserEmail() ?? "";
+    print(email.text);
+  }
+
+
   void registerUser()async{
 
     showDialog(
@@ -61,6 +71,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
       if(userCredential != null){
         showSnackBar('Registration Successful', scaffoldKey.currentContext);
         print('Registration Successful');
+        await UserSimplePreferences.setEmail(userCredential.user.email);
 
         //Saving User Data
         DatabaseReference newUserRefer = FirebaseDatabase.instance.reference().child('user/${userCredential.user.uid}');

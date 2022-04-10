@@ -77,8 +77,11 @@ class Quiz1State extends State<Quiz1> {
 
               //image
                 new Padding(padding: EdgeInsets.all(10.0)),
-                new Image.asset(
-                  "assets/images/quiz1/${quiz.images[questionNumber]}.jpg"
+                SizedBox(
+                  height: 250,
+                  child: new Image.asset(
+                    "assets/images/quiz1/${quiz.images[questionNumber]}.jpg"
+                  ),
                 ),
                 new Padding(padding: EdgeInsets.all(10.0)),
                 new Text(quiz.questions[questionNumber],

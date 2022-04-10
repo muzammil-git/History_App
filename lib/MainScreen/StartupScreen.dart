@@ -1,6 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:history_app/MainScreen/Login.dart';
+import 'package:history_app/Utils/UserSimplePreferences.dart';
+
+import 'Content.dart';
+
 
 class StartupScreen extends StatefulWidget {
 
@@ -16,8 +20,15 @@ class _StartupScreenState extends State<StartupScreen> {
   String platform = "Android";
   final int futureDelay = 5;
 
+
+
   void pageNavigate() {
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (BuildContext context) => LoginPage()));
+
+    Navigator.pushReplacement(context,
+        MaterialPageRoute(
+            builder: (BuildContext context) => UserSimplePreferences.getUserEmail() != null  ? Content() : LoginPage(),
+        ),
+    );
   }
 
   _routeTimer() async {
